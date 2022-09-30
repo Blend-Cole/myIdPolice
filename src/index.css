@@ -1,0 +1,70 @@
+html { font-size: 10px; } 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-lg;
+  }
+  h3 {
+    @apply text-sm;
+  }
+  a {
+    /*@apply text-blue underline;*/
+  }
+}
+
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 65%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding-top: 100%;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+  
+  .star-label label:before {
+    content:" *";
+    color: red;
+    margin-right: 1rem;
+  }
+
+  
+  .footer-bg {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url('https://mojonow.blob.core.windows.net/cmr/t5619/opt/0f66626631494a54aca120e7150e2d65_1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    padding: 9rem 0;
+  }
